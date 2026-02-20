@@ -10,6 +10,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { background: #e8e8e8; font-family: 'Noto Sans JP', sans-serif; color: var(--black); padding: 40px 20px; }
 
+  /* Scaffold */
   .header-info { max-width: 1200px; margin: 0 auto 40px; background: var(--white); border-radius: 12px; padding: 32px 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
   .header-info h1 { font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 700; letter-spacing: 2px; margin-bottom: 8px; }
   .header-info .subtitle { font-size: 14px; color: var(--gray-mid); margin-bottom: 20px; }
@@ -32,11 +33,13 @@
   .tag { display: inline-block; font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 3px; margin-right: 4px; }
   .tag-photo { background: #E3F2FD; color: #1565C0; } .tag-design { background: #F3E5F5; color: #7B1FA2; } .tag-important { background: #FCE4EC; color: #C62828; }
 
+  /* Shared placeholder */
   .ph { background: var(--gray-dark); border: 2px dashed var(--gray-mid); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--gray-light); text-align: center; border-radius: 3px; }
   .ph .icon { font-size: 14px; margin-bottom: 1px; opacity: 0.5; }
   .ph .ph-label { font-weight: 600; font-size: 7px; }
   .ph .ph-desc { font-size: 6px; opacity: 0.7; line-height: 1.2; }
 
+  /* ===== PAGE 1 ===== */
   .cover { width: 100%; height: 100%; display: grid; grid-template-rows: auto 1fr auto; background: var(--black); color: var(--white); }
   .cover-top { padding: 20px 24px 12px; display: flex; justify-content: space-between; align-items: flex-start; }
   .cover-event-name { font-size: 9px; letter-spacing: 2px; opacity: 0.7; }
@@ -47,7 +50,7 @@
   .cover-main { display: grid; grid-template-columns: 1fr 1fr; position: relative; }
   .cover-left, .cover-right { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; }
   .cover-divider { position: absolute; top: 10%; bottom: 10%; left: 50%; width: 1px; background: rgba(255,255,255,0.2); z-index: 3; }
-  .cover-divider::after { content: '\00d7'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--black); color: var(--accent); font-family: 'Bebas Neue', sans-serif; font-size: 18px; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); }
+  .cover-divider::after { content: '×'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--black); color: var(--accent); font-family: 'Bebas Neue', sans-serif; font-size: 18px; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); }
   .cover-photo-main { width: 85%; aspect-ratio: 3/4; }
   .cover-caption { text-align: center; margin-top: 8px; }
   .cover-caption .role { font-size: 8px; opacity: 0.5; }
@@ -63,6 +66,7 @@
 </head>
 <body>
 
+<!-- Header -->
 <div class="header-info">
   <h1>SENJIN HOLDINGS — MATCH DAY PROGRAM</h1>
   <div class="subtitle">ワイヤーフレーム構成案 ｜ 次なる夢へSenjinデー ～大人のリベンジマッチ～</div>
@@ -74,9 +78,10 @@
   </div>
 </div>
 
+<!-- PAGE 1 -->
 <div class="section-title">
   <span class="page-badge">PAGE 1 — 表紙</span>
-  <span class="page-desc">画面分割：野球少年 × ビジネスマン</span>
+  <span class="page-desc">画面分割：ビジネスマン × プロ野球選手</span>
   <span class="page-role">役割：第一印象・ストーリーの入口</span>
 </div>
 <div class="page-container">
@@ -89,25 +94,25 @@
       <div class="cover-main">
         <div class="cover-divider"></div>
         <div class="cover-left">
-          <div class="ph cover-photo-main"><div class="icon">⚾</div><div class="ph-label">渡邉哲成</div><div class="ph-desc">少年野球〜慶應時代の<br>野球写真</div></div>
-          <div class="cover-caption"><div class="role">THEN — 野球少年</div></div>
+          <div class="ph cover-photo-main"><div class="icon">💼</div><div class="ph-label">渡邉哲成</div><div class="ph-desc">Senjin Holdings 執行役員としての<br>ビジネスシーン写真</div></div>
+          <div class="cover-caption"><div class="role">WATANABE TESSEI — Senjin Holdings 執行役員</div></div>
         </div>
         <div class="cover-right">
-          <div class="ph cover-photo-main"><div class="icon">💼</div><div class="ph-label">渡邉哲成</div><div class="ph-desc">ビジネスシーンの<br>写真</div></div>
-          <div class="cover-caption"><div class="role">NOW — 執行役員</div></div>
+          <div class="ph cover-photo-main"><div class="icon">⚾</div><div class="ph-label">正木智也</div><div class="ph-desc">福岡ソフトバンクホークス #31<br>プレー写真</div></div>
+          <div class="cover-caption"><div class="role">MASAKI TOMOYA — 福岡ソフトバンクホークス #31</div></div>
         </div>
       </div>
       <div class="cover-bottom">
-        <div class="cover-catch">THE FIELD HAS CHANGED. THE SPIRIT HASN'T.</div>
-        <div class="cover-headline">「戦う場所は変わった。<br>でも、本気は変わらない。」</div>
+        <div class="cover-catch">DIFFERENT FIELDS, SAME SPIRIT.</div>
+        <div class="cover-headline">「フィールドは違う。<br>でも、本気は同じだ。」</div>
         <div class="cover-sub">Senjin Holdings × 福岡ソフトバンクホークス</div>
         <div class="cover-logos"><div class="logo-ph">Senjin Holdings ロゴ</div><div class="logo-ph">ホークス ロゴ</div></div>
       </div>
     </div>
   </div>
   <div class="notes-panel">
-    <div class="note-card"><h4>📐 レイアウト意図</h4><p>左右で「過去と現在」を対比。中央の「×」で2つの時代をつなぐ。</p></div>
-    <div class="note-card"><h4>📸 必要な素材</h4><ul><li><span class="tag tag-photo">写真</span>渡邉さんの野球時代の写真</li><li><span class="tag tag-photo">写真</span>渡邉さんのビジネスシーン写真</li><li><span class="tag tag-design">ロゴ</span>Senjin Holdings / ホークス ロゴ</li></ul></div>
+    <div class="note-card"><h4>📐 レイアウト意図</h4><p>左右で「ビジネス × プロ野球」ふたりの"今"を対比。中央の「×」で2つのフィールドをつなぐ。</p></div>
+    <div class="note-card"><h4>📸 必要な素材</h4><ul><li><span class="tag tag-photo">写真</span>渡邉さんのビジネスシーン写真（Senjin執行役員）</li><li><span class="tag tag-photo">写真</span>正木選手のプロ野球写真（ホークス #31）</li><li><span class="tag tag-design">ロゴ</span>Senjin Holdings / ホークス ロゴ</li></ul></div>
     <div class="note-card"><h4>⚠️ 確認事項</h4><ul><li><span class="tag tag-important">要確認</span>ホークスロゴ使用ガイドライン</li></ul></div>
   </div>
 </div>
